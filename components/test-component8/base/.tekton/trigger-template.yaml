@@ -33,7 +33,7 @@ spec:
       - name: git-url
         value: https://github.com/stuartwdouglas/code-with-quarkus
       - name: output-image
-        value: quay.io/psturc/test-images:test-kcp-$(tt.params.git-revision)
+        value: quay.io/psturc/test-images@sha256:e8e928c334d960d2fa002a14011fb33247414dc39b6b854a870b5352ab2998a7-$(tt.params.git-revision)
       pipelineRef:
         bundle: quay.io/psturc/pipeline-build-test-image:java-builder-2022-11-09-104844
         name: java-builder

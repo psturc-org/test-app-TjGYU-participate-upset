@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: test-component8
     spec:
       containers:
-      - image: quay.io/psturc/test-images:test-kcp
+      - image: quay.io/psturc/test-images@sha256:e8e928c334d960d2fa002a14011fb33247414dc39b6b854a870b5352ab2998a7
         imagePullPolicy: Always
         name: container-image
         resources: {}
